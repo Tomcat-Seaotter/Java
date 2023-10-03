@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nbut.FPaneController">
+   <children>
+      <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleButton" text="Button" />
+      <Label fx:id="lab1" text="Label" />
+   </children>
+</FlowPane>

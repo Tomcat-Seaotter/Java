@@ -1,0 +1,10 @@
+package com.fxml;
+
+import javafx.scene.control.Button;
+
+public class studentPanelController {
+	@FXML
+	private Button addbtn;
+
+	
+}

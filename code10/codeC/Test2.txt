@@ -1,0 +1,11 @@
+@startuml
+class Person extends Object{
+	- String name
+	- int age
+	- String id
+	Person(String n, int a, String id)
+	+ String toString()
+	+ boolean equals(Object o)
+}
+
+@enduml

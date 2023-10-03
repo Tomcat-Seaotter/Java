@@ -1,0 +1,23 @@
+package com.fxml;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
+
+
+public class studentPanelController {
+	@FXML
+	private Button addbtn;
+	private TextField tx1;
+	private TextField tx2;
+	private TextField tx3;
+	
+	@FXML
+	   protected void handleButtonAction(ActionEvent event)
+	   {
+			addbtn.setText("Hello FXML");
+	    }
+	
+}

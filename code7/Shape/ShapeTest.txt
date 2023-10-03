@@ -1,0 +1,25 @@
+@startuml
+abstract class Shape {
+	private String type;
+	Shape()
+	Shape(String type)
+	public abstract double getArea();
+	public abstract double getPerimeter();
+}
+
+class Square extends Shape {
+	private int width;
+	private int height;
+	Square()
+	Square(String t, int width, int height)
+	public double getArea()
+	public double getPerimeter()
+}
+class Circle extends Shape {
+	private int radius;
+	Circle()
+	Circle(String t,int radius)
+	public double getArea()
+	public double getPerimeter()
+}
+@enduml

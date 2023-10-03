@@ -1,0 +1,12 @@
+import javafx.application.Application;
+import com.gui.login;
+
+
+public class Test {
+
+	public static void main(String[] args)
+	{
+		new login().launch(args);
+		
+	}
+}

@@ -1,0 +1,25 @@
+@startUML
+
+abstract class IConnect {
+	+connect():void
+	+disconnect():void
+}
+
+class Connect extends IConnect {
+	+connect():void
+	+disconnect():void
+}
+
+
+abstract class ITransmit {
+	+receive():void
+	+send():void
+}
+
+class Transmit extends ITransmit {
+	+receive():void
+	+send():void
+}
+
+
+@endUML

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="500.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <children>
+      <Label text="学生信息" />
+      <TableView prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn prefWidth="75.0" text="学号" />
+          <TableColumn prefWidth="75.0" text="姓名" />
+            <TableColumn prefWidth="75.0" text="年龄" />
+        </columns>
+      </TableView>
+      <HBox alignment="BOTTOM_CENTER" spacing="10.0" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <TextField fx:id="tx1" />
+            <TextField fx:id="tx2" />
+            <TextField fx:id="tx3" />
+            <Button fx:id="addbtn" mnemonicParsing="false" text="添加" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

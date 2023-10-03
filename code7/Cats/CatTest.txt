@@ -1,0 +1,30 @@
+@startuml
+class Cat {
+	private String type;
+	Cat()
+	Cat(String type)
+	public String getType()
+	public void setType(String t)
+}
+
+class Lion extends Cat {
+	private int length;
+	private int weight;
+	Lion()
+	Lion(String t,int length, int weight) 
+}
+
+class Tiger extends Cat {
+	private int length;
+	private int weight;
+	Tiger()
+	Tiger(String t,int length, int weight)
+}
+
+class Panther extends Cat {
+	private int length;
+	private int weight;
+	Panther()
+	Panther(String t,int length, int weight)
+}
+@enduml

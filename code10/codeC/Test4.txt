@@ -1,0 +1,14 @@
+@startuml
+class Bird {
+	+ void eat()
+	+ void fly()
+}
+
+class BirdTest {
+	Bird b = new Bird()
+}
+
+note right of BirdTest : 匿名内部类重新定义eat和fly方法
+
+BirdTest <.. Bird
+@enduml

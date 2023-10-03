@@ -1,0 +1,62 @@
+package code14;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+public class Lesson41 extends Application {
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		// TODO Auto-generated method stub
+		FlowPane pane1 = new FlowPane();
+
+        pane1.setHgap(10);
+        pane1.setVgap(20);
+        pane1.setPadding(new Insets(15,15,15,15));
+
+        // Button 1
+        Button button1= new Button("点击按钮1");
+        pane1.getChildren().add(button1);
+
+        // Button 2
+        Button button2 = new Button("点击按钮2");
+        button2.setPrefSize(100, 100);
+        pane1.getChildren().add(button2);
+
+        // TextField
+        TextField textField = new TextField("Text Field");
+        textField.setPrefWidth(110);
+
+
+        pane1.getChildren().add(textField);
+
+        // CheckBox
+        CheckBox checkBox = new CheckBox("Check Box");
+
+        pane1.getChildren().add(checkBox);
+
+        // RadioButton
+        RadioButton radioButton = new RadioButton("Radio Button");
+        pane1.getChildren().add(radioButton);
+
+        Scene scene = new Scene(pane1, 500, 300);
+
+        stage.setTitle("FlowPane");
+        stage.setScene(scene);
+        stage.show();
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Application.launch(args);
+	}
+
+}

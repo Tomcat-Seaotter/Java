@@ -1,0 +1,14 @@
+package com.fxml;
+
+import javafx.scene.control.Button;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
+
+public class studentPanelController {
+	@FXML
+	private Button addbtn;
+
+	
+}

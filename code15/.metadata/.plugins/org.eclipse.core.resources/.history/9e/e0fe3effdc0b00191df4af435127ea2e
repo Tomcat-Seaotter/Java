@@ -1,0 +1,44 @@
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+
+public class login extends Application {
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		// TODO Auto-generated method stub
+		BorderPane bpane = new BorderPane();
+		Label luser = new Label("”√ªß√˚");
+		Label lpass = new Label("√‹¬Î");
+		TextField tuser = new TextField();
+		PasswordField tpass = new PasswordField();
+		VBox vbox1 = new VBox();
+		VBox vbox2 = new VBox();
+		vbox1.getChildren().add(luser);
+		vbox1.getChildren().add(lpass);
+		bpane.setLeft(vbox1);
+		vbox2.getChildren().add(tuser);
+		vbox2.getChildren().add(tpass);
+		bpane.setCenter(vbox2);
+		
+		Scene scene = new Scene(bpane,400,400,Color.RED);
+		stage.setTitle("Two Stage");
+		stage.setFullScreen(true);
+		stage.setScene(scene);
+		stage.show();
+		
+		
+		
+				
+		
+	}
+
+}

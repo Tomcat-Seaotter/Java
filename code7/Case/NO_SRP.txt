@@ -1,0 +1,17 @@
+@startUML
+
+abstract class IClient {
+	+connect():void
+	+disconnect():void
+	+receive():void
+	+send():void
+}
+
+class Client extends IClient {
+	+connect():void
+	+disconnect():void
+	+receive():void
+	+send():void
+}
+
+@endUML

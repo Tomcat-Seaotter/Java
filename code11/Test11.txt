@@ -1,0 +1,26 @@
+@startuml
+class Collection {
+	
+}
+
+class List extends Collection {
+	
+}
+
+class Set extends Collection {
+	
+}
+
+class Queue extends Collection {
+	
+}
+
+class Map {
+	
+}
+
+class SortedMap extends Map {
+	
+}
+
+@enduml

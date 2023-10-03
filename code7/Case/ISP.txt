@@ -1,0 +1,26 @@
+@startUML
+abstract class Animal {
++void eat()
+}
+
+abstract class Canidae extends Animal {
++void run()
+}
+
+class Dog extends Canidae {
++void eat()
++run()
+}
+
+abstract class Bird extends Animal {
++void sing()
++void fly()
+}
+
+class Parrot extends Bird {
++void eat()
++void sing()
++void fly()
+}
+
+@endUML

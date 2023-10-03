@@ -1,0 +1,9 @@
+@startuml
+class Person{
+	- String id
+	- int age
+	Person(String id, int a)
+	+ boolean equals(Object o)
+}
+
+@enduml

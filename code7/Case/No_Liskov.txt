@@ -1,0 +1,24 @@
+@startUML
+
+class Bird {
+	+eat():void
+	+fly():void
+}
+
+class Penguin extends Bird {
+	+eat():void
+}
+
+
+class Crow extends Bird {
+	+eat():void
+	+fly():void
+}
+
+class Cran extends Bird {
+	+eat():void
+	+fly():void
+}
+
+
+@endUML

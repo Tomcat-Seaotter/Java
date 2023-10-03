@@ -1,0 +1,11 @@
+package com.gui;
+
+public class Test {
+
+	public static void main(String[] args)
+	{
+		login login1 = new login();
+		login1.launch(args);
+		
+	}
+}

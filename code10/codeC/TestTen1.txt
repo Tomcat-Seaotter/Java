@@ -1,0 +1,25 @@
+@startuml
+abstract class Mammal{
+	+ void run()
+	+ void eat()
+}
+
+interface flyable {
+	+ abstract void fly()
+}
+
+interface swimable {
+	+ abstract void swim();
+}
+class Bat extends Mammal implements flyable{
+	+ void run()
+	+ void eat()
+	+ void fly()
+}
+
+class Tiger extends Mammal implements swimable {
+	+ void run()
+	+ void eat()
+	+ void swim()
+}
+@enduml

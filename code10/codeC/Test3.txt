@@ -1,0 +1,19 @@
+@startuml
+class Student {
+	- String name
+	- int age
+	Student(String n, int a)
+	+ String getName()
+	+ int getAge()
+	+ void setName(String n)
+	+ void setAge()
+}
+
+class studentSort {
+	Student[] studnets //5 elements
+	+ Student[] sort(Student[] s) // sort by name
+	+ static void main(String[] args)
+}
+
+Student -o studentSort
+@enduml
